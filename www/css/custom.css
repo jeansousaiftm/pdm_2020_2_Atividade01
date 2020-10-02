@@ -1,0 +1,15 @@
+.centralizado {
+	width: 100%; 
+	text-align: center;
+}
+
+.titulo, .links {
+	font-weight: bold;
+	font-family: Arial;
+}
+
+.titulo-item, .texto-item {
+	font-family: Arial;
+	text-align: justify;
+}
+

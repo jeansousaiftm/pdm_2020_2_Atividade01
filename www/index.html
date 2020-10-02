@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/materialize.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/materialize.js"></script>
+        <title>Hello World</title>
+    </head>
+    <body>
+		<div class="red darken-4 white-text valign-wrapper">
+			<div class="centralizado">
+				<h3 class="titulo">MOBILEFLIX</h3>
+			</div>
+		</div>
+		<ul class="tabs red darken-4">
+			<li class="tab">
+				<a class="white-text waves-effect links" href="#filmes">
+					Filmes
+				</a>
+			</li>
+			<li class="tab">
+				<a class="white-text waves-effect links" href="#series">
+					Séries
+				</a>
+			</li>
+		</ul>
+		<section id="filmes">
+			<ul class="collapsible">
+				<li class="">
+					<div class="collapsible-header red white-text titulo-item">
+						Homem de Aço (2013)
+					</div>
+					<div class="collapsible-body texto-item row">
+						<div class="col s4">
+							<img src="img/filme1.jpg" class="responsive-img"></img>
+						</div>
+						<div class="col s8">
+							<b>Sinopse: </b>Com a iminente destruição de Krypton, seu planeta natal, Jor-El e sua mulher procuram preservar a raça enviando o filho recém-nascido para a Terra. A nave espacial da criança aterrissa na fazenda de Jonathan e Martha Kent, que o batizam de Clark e o criam como seu próprio filho. Apesar das habilidades extraordinárias levarem o Clark adulto a viver à margem da sociedade, ele precisa se tornar um herói para salvar aqueles que ama de uma terrível ameaça.
+							
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+		
+		<section id="series">
+			<ul class="collapsible">
+				<li class="">
+					<div class="collapsible-header red white-text titulo-item">
+						The Good Doctor (4 temporadas)
+					</div>
+					<div class="collapsible-body texto-item row">
+						<div class="col s4">
+							<img src="img/serie1.jpg" class="responsive-img"></img>
+						</div>
+						<div class="col s8">
+							<b>Sinopse: </b>Um jovem médico com autismo vindo da calma vida do interior começa a trabalhar em um famoso hospital. Além dos desafios da profissão, Shaun Murphy precisa provar sua capacidade a seus colegas e superiores.
+							
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+    </body>
+	<script>
+		$(document).ready(function() {
+			$(".tabs").tabs();
+			$(".collapsible").collapsible();
+		});
+	</script>
+</html>
